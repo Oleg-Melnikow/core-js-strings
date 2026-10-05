@@ -24,7 +24,6 @@ function getStringLength(value) {
     return value.length;
   }
   return 0;
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -46,7 +45,6 @@ function isString(value) {
     return true;
   }
   return false;
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -63,7 +61,6 @@ function isString(value) {
  */
 function concatenateStrings(value1, value2) {
   return value1.concat(value2);
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -79,7 +76,6 @@ function concatenateStrings(value1, value2) {
  */
 function getFirstChar(value) {
   return value.charAt(0);
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -95,7 +91,6 @@ function getFirstChar(value) {
  */
 function removeLeadingAndTrailingWhitespaces(value) {
   return value.trim();
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -111,7 +106,6 @@ function removeLeadingAndTrailingWhitespaces(value) {
  */
 function removeLeadingWhitespaces(value) {
   return value.trimStart();
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -127,7 +121,6 @@ function removeLeadingWhitespaces(value) {
  */
 function removeTrailingWhitespaces(value) {
   return value.trimEnd();
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -148,8 +141,6 @@ function repeatString(str, times) {
     return str.repeat(times);
   }
   return '';
-
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -171,7 +162,6 @@ function removeFirstOccurrences(str, value) {
     return res;
   }
   return str;
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -192,7 +182,6 @@ function removeLastOccurrences(str, value) {
     return str.slice(0, index) + str.slice(index + value.length);
   }
   return str;
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -216,8 +205,6 @@ function sumOfCodes(str) {
     return res;
   }
   return 0;
-
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -233,7 +220,6 @@ function sumOfCodes(str) {
  */
 function startsWith(str, substr) {
   return str.startsWith(substr);
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -249,7 +235,6 @@ function startsWith(str, substr) {
  */
 function endsWith(str, substr) {
   return str.endsWith(substr);
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -269,7 +254,6 @@ function formatTime(minutes, seconds) {
   const min = minutes.toString().padStart(2, '0');
   const sec = seconds.toString().padStart(2, '0');
   return `${min}:${sec}`;
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -288,7 +272,6 @@ function reverseString(str) {
     res += str[i];
   }
   return res;
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -304,7 +287,6 @@ function reverseString(str) {
  */
 function orderAlphabetically(str) {
   return str.split('').sort().join('');
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -321,7 +303,6 @@ function orderAlphabetically(str) {
  */
 function containsSubstring(str, substring) {
   return str.includes(substring);
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -347,7 +328,6 @@ function countVowels(str) {
     }
   }
   return res;
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -374,7 +354,6 @@ function isPalindrome(str) {
   }
   const reverseStr = convert(first).split('').reverse().join('');
   return reverseStr === convert(first);
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -392,7 +371,6 @@ function isPalindrome(str) {
 function findLongestWord(sentence) {
   const arr = sentence.split(' ').sort((a, b) => b.length - a.length);
   return arr[0];
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -412,7 +390,6 @@ function reverseWords(str) {
       return [...el].reverse().join('');
     })
     .join(' ');
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -433,7 +410,6 @@ function invertCase(str) {
       return el.toUpperCase() === el ? el.toLowerCase() : el.toUpperCase();
     })
     .join('');
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -451,7 +427,6 @@ function invertCase(str) {
  */
 function getStringFromTemplate(firstName, lastName) {
   return `Hello, ${firstName} ${lastName}!`;
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -466,7 +441,6 @@ function getStringFromTemplate(firstName, lastName) {
  */
 function extractNameFromTemplate(value) {
   return value.slice(7, value.length - 1);
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -482,7 +456,6 @@ function extractNameFromTemplate(value) {
  */
 function unbracketTag(str) {
   return str.slice(1, str.length - 1);
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -502,7 +475,6 @@ function unbracketTag(str) {
  */
 function extractEmails(str) {
   return str.split(';');
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -532,7 +504,6 @@ function encodeToRot13(str) {
         : el;
     })
     .join('');
-  // throw new Error('Not implemented');
 }
 
 /**
@@ -615,7 +586,6 @@ function getCardId(value) {
     'K♠',
   ];
   return cards.findIndex((el) => el === value);
-  // throw new Error('Not implemented');
 }
 
 module.exports = {
